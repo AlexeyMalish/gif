@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GifVk</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Title</string>
+    <string name="source">Source</string>
+    <string name="date_of_creation">Date of creation</string>
+    <string name="search_gif">Search Gif . . .</string>
+</resources>

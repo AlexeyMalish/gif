@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/destination_main_fragment">
+
+    <fragment
+        android:id="@+id/destination_main_fragment"
+        android:name="com.example.vkgif.ui.GifMainFragment"
+        tools:layout="@layout/gif_fragment">
+
+        <action
+            android:id="@+id/action_destination_main_fragment_to_destination_fragment_gif_page"
+            app:destination="@id/destination_fragment_gif_page" >
+            <argument
+                android:name="url"
+                android:defaultValue=""
+                app:argType="string"/>
+            <argument
+                android:name="title"
+                android:defaultValue=""
+                app:argType="string"/>
+            <argument
+                android:name="date"
+                android:defaultValue=""
+                app:argType="string"/>
+            <argument
+                android:name="source"
+                android:defaultValue=""
+                app:argType="string"/>
+        </action>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/destination_fragment_gif_page"
+        android:name="com.example.vkgif.ui.fragment.GifPageFragment"
+        tools:layout="@layout/fragment_gif_page">
+
+        <argument
+            android:name="url"
+            android:defaultValue=""
+            app:argType="string"/>
+
+        <action
+            android:id="@+id/action_fragment_gif_page_pop"
+            app:popUpTo="@id/destination_main_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

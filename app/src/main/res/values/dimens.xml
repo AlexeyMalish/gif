@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="catergory_item_padding">10dp</dimen>
+    <dimen name="giphy_200dp">200dp</dimen>
+    <dimen name="full_page_giphy_margin">20dp</dimen>
+</resources>
